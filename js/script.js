@@ -24,11 +24,6 @@ let personalMovieDB = {
     privat: false,
 }
 
-// let movie1 = ''
-// let score1 = ''
-// let movie2 = ''
-// let score2 = ''
-
 for (let i = 1; i <=2; i++){
    const  movie  = prompt('Один из последних просмотренных фильмов?'),
           score = prompt('На сколько оцените его?');
