@@ -72,6 +72,7 @@ let personalMovieDB = {
     },
 }
 
+personalMovieDB.start()
 personalMovieDB.rememberMyFilms()
 personalMovieDB.detectPersonalLevel()
 personalMovieDB.writeYourGenres()
