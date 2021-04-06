@@ -15,22 +15,20 @@
 
 'use strict';
 
-let numberOfFilms;
-
-function start(){
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?')
-    while(numberOfFilms == '' || numberOfFilms == null|| isNaN(numberOfFilms)){
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?')
-    }
-}
-start();
 
 let personalMovieDB = {
-    count:  numberOfFilms,
+    count:  0,
     movies: {},
     actors: {},
     genres: [],
     privat: false,
+    start: () => {
+        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?')
+        
+        while(personalMovieDB.count == '' || personalMovieDB.count == null|| isNaN(personalMovieDB.count)){
+            personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?')
+        }
+    },
     rememberMyFilms: () => {
         for (let i = 1; i <=2; i++){
             const  movie  = prompt('Один из последних просмотренных фильмов?'),
