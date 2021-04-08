@@ -42,7 +42,8 @@ console.log(filmList);
 
 filmList.innerHTML = ''
 movieDB.movies.sort().forEach((current, index) => {
-    filmList.innerHTML += `<li class="promo__interactive-item">${index + 1}. ${current}
+    filmList.innerHTML += `
+    <li class="promo__interactive-item">${index + 1}. ${current}
         <div class="delete"></div>
     </li>`
 })
